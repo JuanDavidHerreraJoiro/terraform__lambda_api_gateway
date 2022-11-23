@@ -1,3 +1,4 @@
+//providers 
 terraform {
   required_providers {
     aws = {
@@ -57,7 +58,6 @@ resource "aws_s3_object" "lambda_hello_world" {
 }
 
 //Definir su función Lambda y relacionada recursos.
-
 resource "aws_lambda_function" "hello_world" {
   function_name = "HelloWorld"
 
